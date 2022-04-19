@@ -3,7 +3,7 @@
 
 /**
  * _putchar - writes the character e to stdout
- * @c: The character to print
+ * @e: The character to print
  * Return: On success 1
  * On error, -1 is returned, and errno is set appropriately.
  * Description: _putchar uses a local buffer of 1024 to call write
@@ -21,7 +21,7 @@ int _putchar(char e)
 	}
 	if (e != -1)
 	{
-		buffer[i] = c;
+		buffer[i] = e;
 		i++;
 	}
 	if (e != -1)
