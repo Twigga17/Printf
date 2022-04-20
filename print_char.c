@@ -11,7 +11,7 @@
  */
 int _putchar(char e)
 {
-	static char buf[1024];
+	static char buffer[1024];
 	static int i;
 
 	if (e == -1 || i >= 1024)
