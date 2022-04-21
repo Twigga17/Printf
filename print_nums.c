@@ -54,10 +54,9 @@ void print_number(int n)
 	}
 	else
 		n1 = n;
-
-	if (n1 / 10
-			print_number(n1 / 10);
-			_putchar((n1 % 10) + '0');
+	if (n1 / 10)
+		print_number(n1 / 10);
+	_putchar((n1 % 10) + '0');
 }
 
 /**
@@ -68,13 +67,13 @@ void print_number(int n)
  */
 int count_digit(int i)
 {
-        unsigned int d = 0;
+	unsigned int d = 0;
 	unsigned int u;
 
 	if (i < 0)
-	        u = i * -1;
+		u = i * -1;
 	else
-	        u = i;
+		u = i;
 	while (u != 0)
 	{
 		u /= 10;
@@ -82,5 +81,3 @@ int count_digit(int i)
 	}
 	return (d);
 }
-
-
